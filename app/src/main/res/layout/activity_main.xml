@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="142dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/et"
+        app:layout_constraintEnd_toEndOf="@+id/et"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="320dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
+        android:textColor="#F30606"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="237dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="290dp"
+        android:backgroundTint="#DC0FE866"
+        android:onClick="openWhatsapp"
+        android:text="WhatsApp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
